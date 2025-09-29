@@ -1,0 +1,50 @@
+{
+  "name": "scrapingdog-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for ScrapingDog API - Web scraping, search engines, social media, and e-commerce data extraction",
+  "main": "build/index.js",
+  "type": "module",
+  "bin": {
+    "scrapingdog-mcp-server": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+    "dev": "tsx src/index.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "scrapingdog",
+    "web-scraping",
+    "api",
+    "data-extraction",
+    "search-engines",
+    "social-media",
+    "e-commerce"
+  ],
+  "author": "Guddu Kumar <nvrunxbdueub@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.7.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nvrunx/scrapingdog-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nvrunx/scrapingdog-mcp-server/issues"
+  },
+  "homepage": "https://github.com/nvrunx/scrapingdog-mcp-server#readme"
+}
